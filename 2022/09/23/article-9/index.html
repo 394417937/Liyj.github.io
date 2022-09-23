@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="px/em/rem的区别与rem的原理">
-    <meta name="description" content="px&amp;#x2F;em&amp;#x2F;rem的区别与rem的原理px&amp;#x2F;em&amp;#x2F;rem的区别
-px 是固定的像素，一旦设置了就无法因为适应页面大小而改变
-em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是长度不是定死">
+    <meta name="keywords" content="Promise">
+    <meta name="description" content="Promise三个状态  pending  fulfilled   rejected
+状态凝固 一旦状态发生变化 就不能再更新状态
+new Promise((resolve, reject) =&gt; &amp;#123;
+      // 异步代码放">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +20,7 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>px/em/rem的区别与rem的原理 | 李扬洁博客</title>
+    <title>Promise | 李扬洁博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -251,12 +252,12 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">px/em/rem的区别与rem的原理</h1>
+                    <h1 class="description center-align post-title">Promise</h1>
                 </div>
             </div>
         </div>
@@ -280,8 +281,8 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Css/">
-                                <span class="chip bg-color">Css</span>
+                            <a href="/tags/Js/">
+                                <span class="chip bg-color">Js</span>
                             </a>
                         
                     </div>
@@ -292,8 +293,8 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Css/" class="post-category">
-                                Css
+                            <a href="/categories/Js/" class="post-category">
+                                Js
                             </a>
                         
                     </div>
@@ -305,7 +306,7 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-22
+                    2022-09-23
                 </div>
                 
 
@@ -314,7 +315,7 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    185
+                    335
                 </div>
                 
 
@@ -344,17 +345,77 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="px-x2F-em-x2F-rem的区别与rem的原理"><a href="#px-x2F-em-x2F-rem的区别与rem的原理" class="headerlink" title="px&#x2F;em&#x2F;rem的区别与rem的原理"></a>px&#x2F;em&#x2F;rem的区别与rem的原理</h1><h2 id="px-x2F-em-x2F-rem的区别"><a href="#px-x2F-em-x2F-rem的区别" class="headerlink" title="px&#x2F;em&#x2F;rem的区别"></a>px&#x2F;em&#x2F;rem的区别</h2><ol>
-<li>px 是固定的像素，一旦设置了就无法因为适应页面大小而改变</li>
-<li>em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是长度不是定死了的，更适用于响应式布局</li>
-<li>em 相对自身font-size，没有则相对于父元素，rem相对于根元素的font-size</li>
-</ol>
-<h2 id="rem的原理"><a href="#rem的原理" class="headerlink" title="rem的原理"></a>rem的原理</h2><ol>
-<li>rem 是css的相对单位，rem缩放是相对根元素字体大小.</li>
-<li>rem 布局的本质是等比缩放，一般是基于宽度。</li>
-<li>rem 会配合媒体查询（或js动态获取屏幕宽度）来一起使用，来实现屏幕的适配。</li>
-</ol>
+                <h1 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h1><p>三个状态  pending  fulfilled   rejected</p>
+<p>状态凝固 一旦状态发生变化 就不能再更新状态</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// 异步代码放到promise中去...</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span>成功的结果<span class="token punctuation">)</span>
+      <span class="token comment">// reject(失败的原因)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// res 就是成功的结果</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// error 就是失败的原因</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h4 id="手写Promise-all"><a href="#手写Promise-all" class="headerlink" title="手写Promise.all"></a>手写Promise.all</h4><p>等待原则，等待所有的Promise都处理完成，可以用于处理一些并发任务</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">
+<span class="token keyword">const</span> p1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">3000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">const</span> p2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">const</span> p3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">5000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+  Promise<span class="token punctuation">.</span><span class="token function-variable function">myall</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">//用于存储成功的数量</span>
+    <span class="token keyword">let</span> resArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span>reject</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+        <span class="token comment">// 这里不能直接调用resolve  要等都成功了 在调用resolve</span>
+        arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span>index</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+            <span class="token comment">//item是：p1,p2,p3</span>
+            item<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+                count<span class="token operator">++</span>
+                resArr<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> res
+
+                <span class="token comment">//判断count 和 arr.length</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">===</span> count<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                    <span class="token comment">// 数组长度和成功的次数对得上</span>
+                    <span class="token function">resolve</span><span class="token punctuation">(</span>resArr<span class="token punctuation">)</span> 
+                <span class="token punctuation">&#125;</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+
+    <span class="token comment">// 试试看吧~~</span>
+    Promise<span class="token punctuation">.</span><span class="token function">myall</span><span class="token punctuation">(</span><span class="token punctuation">[</span>p1<span class="token punctuation">,</span> p2<span class="token punctuation">,</span> p3<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">values</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span> <span class="token comment">// [1, 2, 3]</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="手写Promise-race"><a href="#手写Promise-race" class="headerlink" title="手写Promise.race"></a>手写Promise.race</h4><p>赛跑, 竞速原则, 只要三个promise中有一个满足条件, 就会执行.then</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Promise<span class="token punctuation">.</span><span class="token function-variable function">myrace</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+          <span class="token comment">// p1 p2 p3 有一个成功后 需要调用resolve!!!</span>
+          arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+            <span class="token comment">// item: p1 p2 p3</span>
+            item<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+              <span class="token function">resolve</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+          <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -368,8 +429,8 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Css/">
-                                    <span class="chip bg-color">Css</span>
+                                <a href="/tags/Js/">
+                                    <span class="chip bg-color">Js</span>
                                 </a>
                             
                         </div>
@@ -448,17 +509,18 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/09/22/article-4/">
+                <a href="/2022/09/23/article-9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="实现深浅拷贝">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Promise">
                         
-                        <span class="card-title">实现深浅拷贝</span>
+                        <span class="card-title">Promise</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -468,9 +530,9 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -483,6 +545,7 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -501,13 +564,13 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/22/article-2/">
+                <a href="/2022/09/23/article-8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Css3新特性">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="对this的理解">
                         
-                        <span class="card-title">Css3新特性</span>
+                        <span class="card-title">对this的理解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -518,14 +581,14 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Css/" class="post-category">
-                                    Css
+                            <a href="/categories/Js/" class="post-category">
+                                    Js
                                 </a>
                             
                             
@@ -535,8 +598,8 @@ em 和rem相对于px更具有灵活性，他们是相对长度单位，意思是
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Css/">
-                        <span class="chip bg-color">Css</span>
+                    <a href="/tags/Js/">
+                        <span class="chip bg-color">Js</span>
                     </a>
                     
                 </div>
