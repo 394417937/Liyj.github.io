@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="对this的理解">
     <meta name="description" content="对this的理解默认绑定 (指向window的情况)  – 函数调用模式 fn() –
-默认情况下，this 会被绑定到全局对象上，比如在浏览器环境中就为window对象，在node.js环境下为global对象。
-如下代码展示了这种绑定关">
+默认情况下，运行时this 会被绑定到全局对象上，比如在浏览器环境中就为window对象，在node.js环境下为global对象。
+如下代码展示了这种">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -314,7 +314,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    356
+                    359
                 </div>
                 
 
@@ -345,7 +345,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="对this的理解"><a href="#对this的理解" class="headerlink" title="对this的理解"></a>对this的理解</h1><h4 id="默认绑定-指向window的情况"><a href="#默认绑定-指向window的情况" class="headerlink" title="默认绑定 (指向window的情况)"></a>默认绑定 (指向window的情况)</h4><p>  – 函数调用模式 fn() –</p>
-<p>默认情况下，this 会被绑定到全局对象上，比如在浏览器环境中就为window对象，在node.js环境下为global对象。</p>
+<p>默认情况下，运行时this 会被绑定到全局对象上，比如在浏览器环境中就为window对象，在node.js环境下为global对象。</p>
 <p>如下代码展示了这种绑定关系：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">message <span class="token operator">=</span> <span class="token string">"Hello"</span><span class="token punctuation">;</span> 
 
